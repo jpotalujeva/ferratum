@@ -40,7 +40,10 @@
                 type: "DELETE",
                 url: "/api/user/delete/" + id,
                 success: function(){
-                   console.log('shdbjhs');
+                   window.location.href = '/';
+                },
+                error: function (response) {
+                    alert(response.message);
                 }
             });
             return false;
